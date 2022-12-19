@@ -1,4 +1,4 @@
-public class Figuras {//Clase Padre solo metodos(suma,resta,multiplicacion) o superclase
+public abstract class Figuras {//Clase Padre solo metodos(suma,resta,multiplicacion) o superclase
     int x, y;
     double perimetro;
     double area;
@@ -9,9 +9,8 @@ public class Figuras {//Clase Padre solo metodos(suma,resta,multiplicacion) o su
         this.y=y;
     }
 
-    public void Calcular_Perimetro(){
-        perimetro = 2*x+2*y;
-    }
+    protected abstract void Calcular_Perimetro();
+
 
     public double getPerimetro() {
         return perimetro;
@@ -20,9 +19,8 @@ public class Figuras {//Clase Padre solo metodos(suma,resta,multiplicacion) o su
     public void setPerimetro(double perimetro) {
         this.perimetro = perimetro;
     }
-    public void Calculo_Area(){
-        area = x*y;
-    }
+    protected abstract void Calculo_Area();
+
 
     public double getArea() {
         return area;

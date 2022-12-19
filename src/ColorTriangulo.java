@@ -1,7 +1,7 @@
 public class ColorTriangulo extends Triangulo{
     private String color;
     ColorTriangulo(String c,String s,double b,double h){
-        super(c,b,h);
+        super(b,h);
         color=c;
     }
     String getColor(){

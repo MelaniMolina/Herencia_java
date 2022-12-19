@@ -1,26 +1,20 @@
-public class Triangulo extends  DosDimensiones{
-          private String estilo;
-          Triangulo(){
-              super();//Heredo del Padre -->el atributo propio de la clase hijo(estilo)
-              estilo="ninguno";
-          }
+public class Triangulo extends Figuras{
+        private double base;
+        private double altura;
 
-          Triangulo(String s, double b,double h) {
-              super(b,h);
-              estilo=s;
-          }
+        public Triangulo(double base,double altura){
+            this.base=base;
+            this.altura=altura;
+            Calculo_Area();
+            Calcular_Perimetro();
+        }
 
-          Triangulo(double x){
-              super(x);
-              estilo="Estilo nuevo";
-          }
+        public void  Calculo_Area(){
+            area=base*altura/2;
+        }
+        public void Calcular_Perimetro(){
+            perimetro = base*3;
 
-          double areTri(){
-              return  getAltura()*getBase()/2;
-          }
-          void Mostrar_Estilo(){
-              System.out.println("El triangulo tiene: "+estilo);
-          }
-
+        }
 
 }
