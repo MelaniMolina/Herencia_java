@@ -5,7 +5,7 @@ public class DosDimensiones {//Clase Abuelo
     private double altura;
 
     DosDimensiones(){
-        base= altura=0.0;
+        base = altura=0.0;
     }
     DosDimensiones(double b,double h){
     base= b;
@@ -13,7 +13,7 @@ public class DosDimensiones {//Clase Abuelo
 }
 
     DosDimensiones(double x){
-        base=altura=x;
+        base = altura = x;
 
 }
     double getBase(){
@@ -31,6 +31,6 @@ public class DosDimensiones {//Clase Abuelo
 
 
     void mostrar_Dimension(){
-        System.out.println("La Base: "+base+"y"+"la altuta es: "+altura);
+        System.out.println("La Base:  "+base+" y "+"la altura es:  "+altura);
     }
 }

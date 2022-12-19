@@ -19,7 +19,7 @@ public class Triangulo extends  DosDimensiones{
               return  getAltura()*getBase()/2;
           }
           void Mostrar_Estilo(){
-              System.out.println("El triangulo tiene "+estilo);
+              System.out.println("El triangulo tiene: "+estilo);
           }
 
 
